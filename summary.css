@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+ body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E0E8FF;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+
+ }
+
+ /*******************************card****************************/
+ .card {
+    width: 327px;
+    border-radius:20px ;
+    background: #fff;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+    overflow: hidden;
+
+}
+
+.illustration{
+    width: 100%;
+
+}
+.content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 22px;
+    font-weight: 900;
+    color: #1f2e55;
+}
+
+.discarabe {
+    font-size: 15px;
+    color: #717fa6;
+    font-weight: 200;
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+
+
+/********************************content****************************/
+
+.music {
+    width: 100%;
+    padding: 17px;
+    background-color:#f7f9ff ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.shedis {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+
+.cont {
+    font-size: 14px;
+    flex-direction: column;
+    gap: 3px;
+    
+}
+.plan {
+    color: #1f2e55;
+    font-weight: 900;
+}
+
+
+.pay {
+    color:#717fa6 ;
+    font-weight: 500;
+}
+
+
+
+.change{
+    font-size: 13px;
+    color: #382ae1;
+    font-weight:700 ;
+    transition: 0.4s;
+}
+
+.change:hover{
+    color:#766cf1 ;
+    text-decoration: none;
+}
+
+/****************************button***************************/
+.pro {
+   width: 100%;
+   height: 50px;
+   border-radius: 11px;
+   box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.1903);
+   background: #382ae1;
+   border: none;
+   margin-top: 24px;
+   color: white;
+   cursor: pointer;
+   transition:0.4s ;
+   font-size: 15px;
+   font-weight: 900;
+}
+
+.pro:hover{
+    background: #766cf1;
+}
+
+.cancle {
+  font-size: 15px;
+  font-weight: 900;
+  color: #717fa6;
+  margin-top: 24px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.cancle:hover{
+    color:#1f2e55;
+
+}
+/*******************************responsive**************************/
+
+@media screen and (min-width:1440px) {
+    body{
+        background-image:url(./images/pattern-background-desktop.svg) ;
+    }
+
+    .card{
+        width: 450px;
+       
+    }
+
+    .content{
+        padding: 45px 48px 48px ;
+    }
+
+
+    .title{
+        font-size: 28px;
+    }
+
+    .discarabe,.cont{
+        font-size: 16px;
+    }
+    
+    .discarabe{
+        margin-top: 17px;
+    }
+
+
+    .music{
+        margin-top: 20px;
+
+    }
+    .change{
+    font-size: 14px;
+  }
+  .pro{
+    margin-top: 32px;
+  }
+
+  .cancle{
+    margin-top:32px ;
+  }
+    
+
+
+}
